@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body,
+_next {
+  width: 100vw;
+  height: 100vh;
+
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap {
+  position: relative;
+}
+
+.content {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  text-align: center;
+}
+
+.cardlist {
+  width: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
